@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="RegistroUsuario_Control.ControlMaestro"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:RegistroUsuario_Control"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="450">
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Column="0" Grid.Row="0"  HorizontalAlignment="Left" FontFamily="Freight Sans" Foreground="#FF2D4D6E" Name="lblNombreMaestro">Nombre:</TextBlock>
+        <TextBox Grid.Column="0" Grid.Row="1"  HorizontalAlignment="Left" FontFamily="Freight Sans" Foreground="#FF2D4D6E" Name="txtNombreMaestro" Width="250"></TextBox>
+
+        <TextBlock Grid.Column="0" Grid.Row="2"  HorizontalAlignment="Left" FontFamily="Freight Sans" Foreground="#FF2D4D6E" Name="lblTelefonoMaestro">Teléfono:</TextBlock>
+        <TextBox Grid.Column="0" Grid.Row="3"  HorizontalAlignment="Left" FontFamily="Freight Sans" Foreground="#FF2D4D6E" Name="txtTelefonoMaestro" Width="250"></TextBox>
+
+        <TextBlock Grid.Column="0" Grid.Row="4"  HorizontalAlignment="Left" FontFamily="Freight Sans" Foreground="#FF2D4D6E" Name="lblCedulaMaestro">Cédula Profesional:</TextBlock>
+        <TextBox Grid.Column="0" Grid.Row="5"  HorizontalAlignment="Left" FontFamily="Freight Sans" Foreground="#FF2D4D6E" Name="txtCedulaMaestro" Width="250"></TextBox>
+
+        <TextBlock Grid.Column="0" Grid.Row="6"  HorizontalAlignment="Left" FontFamily="Freight Sans" Foreground="#FF2D4D6E" Name="lblCarreraMaestro">Carrera Estudiada:</TextBlock>
+        <TextBox Grid.Column="0" Grid.Row="7"  HorizontalAlignment="Left" FontFamily="Freight Sans" Foreground="#FF2D4D6E" Name="txtCarreraMaestro" Width="250"></TextBox>
+
+    </Grid>
+</UserControl>

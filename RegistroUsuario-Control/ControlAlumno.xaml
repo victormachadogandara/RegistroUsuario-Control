@@ -1,0 +1,59 @@
+﻿<UserControl x:Class="RegistroUsuario_Control.ControlAlumno"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:RegistroUsuario_Control"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="450">
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Column="0" Grid.Row="0"  HorizontalAlignment="Left" FontFamily="Freight Sans" Foreground="#FF2D4D6E" Name="lblNombreAlumno">Nombre:</TextBlock>
+        <TextBox Grid.Column="0" Grid.Row="1"  HorizontalAlignment="Left" FontFamily="Freight Sans" Foreground="#FF2D4D6E" Name="txtNombreAlumno" Width="250"></TextBox>
+
+        <TextBlock Grid.Column="0" Grid.Row="2"  HorizontalAlignment="Left" FontFamily="Freight Sans" Foreground="#FF2D4D6E" Name="lblDireccionAlumno">Dirección:</TextBlock>
+        <TextBox Grid.Column="0" Grid.Row="3"  HorizontalAlignment="Left" FontFamily="Freight Sans" Foreground="#FF2D4D6E" Name="txtDireccionAlumno" Width="250"></TextBox>
+
+        <TextBlock Grid.Column="0" Grid.Row="4"  HorizontalAlignment="Left" FontFamily="Freight Sans" Foreground="#FF2D4D6E" Name="lblCarreraAlumno">Carrera:</TextBlock>
+        <ComboBox Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Name="cb_CarreraAlumno" SelectionChanged="cb_CarreraAlumno_SelectionChanged" Width="250" HorizontalAlignment="Left" FontFamily="Freight Sans">
+            <ComboBoxItem>Comercio Internacional</ComboBoxItem>
+            <ComboBoxItem>Recursos Humanos</ComboBoxItem>
+            <ComboBoxItem>Mercadotecnia</ComboBoxItem>
+            <ComboBoxItem>Finanzas y Contaduría</ComboBoxItem>
+            <ComboBoxItem>Nutrición</ComboBoxItem>
+            <ComboBoxItem>Fisioterapia</ComboBoxItem>
+            <ComboBoxItem>Producción Musical</ComboBoxItem>
+            <ComboBoxItem>Diseño y Gestión de la Marca</ComboBoxItem>
+            <ComboBoxItem>Arquitectura</ComboBoxItem>
+            <ComboBoxItem>Diseño y Gestión de la Moda</ComboBoxItem>
+            <ComboBoxItem>Psicología Educativa</ComboBoxItem>
+            <ComboBoxItem>Comunicación</ComboBoxItem>
+            <ComboBoxItem>Derecho</ComboBoxItem>
+            <ComboBoxItem>Ciencias Políticas y Gestión Pública</ComboBoxItem>
+            <ComboBoxItem>Biomédica</ComboBoxItem>
+            <ComboBoxItem>Mecatrónica</ComboBoxItem>
+            <ComboBoxItem>Diseño y Manufactura</ComboBoxItem>
+            <ComboBoxItem>Industrial en Calidad</ComboBoxItem>
+            <ComboBoxItem>Producción Multimedia</ComboBoxItem>
+            <ComboBoxItem>Minas y Construcción</ComboBoxItem>
+            <ComboBoxItem>Energías Renovables</ComboBoxItem>
+        </ComboBox>
+
+        <TextBlock Grid.Column="0" Grid.Row="6"  HorizontalAlignment="Left" FontFamily="Freight Sans" Foreground="#FF2D4D6E" Name="lblPreparatoriaProcedencia">Preparatoria de Procedencia:</TextBlock>
+        <TextBox Grid.Column="0" Grid.Row="7"  HorizontalAlignment="Left" FontFamily="Freight Sans" Foreground="#FF2D4D6E" Name="txtPreparatoriaProcedencia" Width="250"></TextBox>
+
+    </Grid>
+</UserControl>
